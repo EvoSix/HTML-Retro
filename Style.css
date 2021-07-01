@@ -1,9 +1,18 @@
+@font-face {
+    font-family: Win95;
+    src:url("./fonts/MS Sans Serif 8pt.ttf") format('embedded-opentype')  ,
+	url("./fonts/MS Sans Serif 8pt.ttf") format('woff2') ,
+	url("./fonts/MS Sans Serif 8pt.ttf") format('woff') ,
+	url("./fonts/MS Sans Serif 8pt.ttf") format('truetype')  ,
+	url("./fonts/MS Sans Serif 8pt.ttf") format('svg');
+
+}
+
 body {
-	
-	font-family: 'Bahnschrift';
+	font-family:Win95;
 	margin:0;
-	color : white;
-background-color:#333;
+	color : black;
+background-color:#018281;
  position: relative;
   min-height: 100%;
   min-height: 100vh;
@@ -19,36 +28,41 @@ nav ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
- background-color:#0277bd;
+ background-color:silver;
    position: fixed;
   top: 0;
   width: 100%;
-  box-shadow:0px 1px 2px #424242;
+ 
   height:80px;
 }
 nav ul li{
  float: left;
+  padding:15px 5px;
+ 
 }
 
 nav ul li a{
 	
 	  display: block;
-  color: white;
+  color: black;
   text-align: center;
-  padding:30px 16px;
+ 
   text-decoration: none;
+  border-style:solid;
+  border-color:white black black white;
+padding:10px 5px;
 }
 
  nav ul li a:hover:not(.active){
 	 
 	
-  background-color: #004c8c;
+  background-color: DarkBlue;
  }
  
   .active{
 	 
 	 
-  background-color: #006064!important;
+  background-color: DimGrey;
  }
  section{
 	 margin-left:10%;
@@ -57,13 +71,14 @@ margin-right:10%;
  
 z-index:-1;
  }
+
  section a{
-	 color: white;
+	 
 	  text-decoration: none;
 	 font-weight: bold;
  }
 sommaire ul li a{
-	 color: white;
+	
 	  text-decoration: none;
 	 font-weight: bold;
  }
